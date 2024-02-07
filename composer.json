@@ -1,0 +1,26 @@
+{
+    "name": "clent/log",
+    "description": "log global para tu app",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Clent\\Log\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Clent\\Log\\GlobalLogServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Carlos Sanchez",
+            "email": "carlosedusj12@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
