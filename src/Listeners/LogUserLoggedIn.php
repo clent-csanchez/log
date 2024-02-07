@@ -23,7 +23,7 @@ class LogUserLoggedIn implements ShouldQueue
             'modulo'    => request()->path(),
             'accion'    => request()->getMethod() . ' ' . request()->route()->getActionName(),
             'ip'        => request()->ip(),
-            'detalles'  => request()->all() ?json_encode(request()->except($exception_fields)) : 'test del log',
+            'detalles'  => request()->all() ?json_encode(request()->except($exception_fields)) : '',
         ]);
     }
 }
