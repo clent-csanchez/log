@@ -1,4 +1,4 @@
-# ACESSO FEDERADO - clent/federado
+# LOG GLOBAL - clent/log
 
 El paquete permite al sistema crear una log global a tu aplicacion
 
@@ -34,7 +34,7 @@ Puedes instalar este paquete a través de Composer. Asegúrate de tener Composer
     composer update clent/log
 ```
 4. **Publica el service provider de paquete :**
-    Es necesario publicar el service provider para cargar el archivo de configuracion `federado.php` que sera creado en tu proyecto, necesario para que funcione correctamente. Se publica con el comando : 
+    Es necesario publicar el service provider para cargar el archivo de configuracion `log.php` que sera creado en tu proyecto, necesario para que funcione correctamente. Se publica con el comando : 
     
 ```bash
     php artisan vendor:publish --provider="Clent\Log\GlobalLogServiceProvider"
